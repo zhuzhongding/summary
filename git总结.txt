@@ -1,0 +1,29 @@
+基本概念：
+	Star收藏
+	Fork复制克隆（注意：fork的项目单独存在）
+	watch(关注项目，当项目有更新，可以收到通知)
+	issue(发现代码有bug,发起一个讨论)
+	
+	注意：因为hitHub在国外服务器所以访问较慢或者无法访问，需要翻墙（Shadowsocks）
+	
+	
+	基本信息设置
+	1.设置用户名
+		git config --global user.name 'zhuzhongding'
+	2.设置用户名邮箱
+		git config --global user.email '3167782519@qq.com'
+		
+	初始化仓库
+		1.创建文件夹（mkdir test）
+		2.进入文件夹（cd test）
+		3.把文件夹变为仓库（git init）
+		
+	git管理远程仓库
+		1.	touch a1.php
+		2.	git add a1.php
+		3.	git commit -m '描述'
+		4.	git push
+		
+		
+	
+	
