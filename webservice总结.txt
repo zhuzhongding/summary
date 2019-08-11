@@ -1,0 +1,19 @@
+1.sebservice即web服务，它是一种跨编程语言和跨操作系统平台的远程调用技术。
+2.java中共有三种WebService规范，分别是JAX-WS(JAS-RPC)、JAXM&AAJ、JAX-RS.
+	使用JAX-WS规范开发，客户端与服务端通信使用soap协议传输xml格式数据；
+	使用JAX-RS(restful风格)规范开发，使用http协议传输xml或json形式的数据
+3.webService三要素：soap、wsdl、uddi
+	
+JAX-WS(Java API For XML-WebService) soap协议
+JAX-RS是JAVA针对REST(RepresentationState Transfer)风格制定的一套Web服务规范。
+
+soap = http + xml数据
+wsdl：使用说明书，描述了：对外发布的服务名称（类），接口方法名称（方法），接口参数（方法参数），服务返回的数据类型（方法返回值）
+UDDI: web服务提供商将自己开发的Web服务公布到因特网上，需要使用到UDDI;UDDI是一种目录服务，企业可以通过UDDI来注册和搜索Web服务。
+
+应用场景：如果一个功能，需要被多个系统使用可以使用webservice开发一个服务端接口，供不同的客户端应用。主要应用在企业内部系统之间的接口调用、面向公网的webservice服务。
+优缺点：
+优点：异构平台的互通性；广泛的软件复用；成本低、可读性强
+缺点：由于soap是基于xml传输，本身使用xml传输会传输一些无关内容从而影响效率；使用JAX-RS传输json格式的数据，可以弥补JAX-WS协议下的传输效率的问题。
+
+SOA（Service-OrientedArchitecture）:面向服务架构，webservice作为SOA的一种实现
